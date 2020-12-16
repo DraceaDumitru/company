@@ -6,10 +6,11 @@ public class Main {
                 //Ex 1
         myName();
                 //Ex 2
-        System.out.println("addition result = "+addition(5,4));
-        System.out.println("substraction result = "+substraction(10,2));
-        System.out.println("division result = "+division(8,2));
-        System.out.println("multiplication result = "+multiplication(5,8));
+        Calculator calculator = new Calculator();
+        System.out.println("addition result = "+calculator.getAddition(5,4));
+        System.out.println("substraction result = "+calculator.getSubstration (10,2));
+        System.out.println("division result = "+calculator.getDivision(8,2));
+        System.out.println("multiplication result = "+calculator.getMultiplication(5,8));
                 //Ex 3
         javaLogo();
                 //Ex 4
@@ -25,24 +26,30 @@ public class Main {
                 //Ex9
         distance(10,180,300,00);
 
+                //LogicalOp ex
+        LogicalOp logicalOp = new LogicalOp();
+        int biggest = logicalOp.checkBiggerNumber(3,1);
+        System.out.println();
+        System.out.println("The bigger number is : "+biggest);
+        System.out.println();
+
+        LogicalOp  logicalOp1 = new LogicalOp();
+        String compare = logicalOp1.compareStrings();
+        System.out.println();
+
+        LogicalOp logicalOp2 = new LogicalOp();
+        String snowcm = logicalOp2.snowCm("");
+        System.out.println();
+
+        LogicalOp logicalOp3 = new LogicalOp();
+        String numbers = logicalOp3.compareNumbers("");
+        System.out.println();
+
     }
                 //Ex 1
      static void myName(){
         System.out.println("Dan");
-    }
-                //Ex 2
-     static int addition(int firstNr , int secondNr){
-       return(firstNr+secondNr);
-    }
-     static int substraction(int firstNr , int secondNr){
-      return (firstNr-secondNr);
-
-    }
-     static int division(int firstNr , int secondNr){
-      return(firstNr/secondNr);
-    }
-     static int multiplication(int firstNr , int secondNr){
-      return(firstNr*secondNr);
+        System.out.println();
     }
                 //Ex 3
     public static void javaLogo(){
